@@ -140,6 +140,7 @@ a.logo {
 .navigators .navigator:hover,
 .navigators .navigator:focus {
     color: var(--brand-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-infos {
@@ -157,6 +158,7 @@ a.logo {
 .head-infos:focus,
 .head.infos:hover {
     color: var(--brand-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-info {
@@ -176,12 +178,14 @@ a.head-info {
 .head-infos .head-info:focus {
     color: var(--brand-color);
     text-decoration: none;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-infos .icon-head:focus,
 .head-infos .icon-head:hover {
     fill: var(--brand-color);
     stroke: var(--brand-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-item {
@@ -252,6 +256,51 @@ a.head-info {
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--main-white);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.1);
+
+    z-index: 1;
+
+
+}
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 528px;
+    height: 581px;
+
+    background-color: var(--main-white);
+    box-shadow: 
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%,-50%);
+
+    z-index: 2;
+
+    
 }
 /* Особенности */
 
@@ -381,7 +430,7 @@ a.head-info {
     color: var(--main-white);
     background-color:rgba(47, 48, 58, 0.8);
 
-
+    z-index: 0;
 }
 
 /* Наша команда */
@@ -460,6 +509,7 @@ a.head-info {
 .socials-link:hover {
     color: var(--main-white);
     background-color: var(--brand-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-icon {
@@ -500,12 +550,8 @@ a.head-info {
     border-color: var(--brand-color);
     color: var(--brand-color);
     outline: var(--brand-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .customers-logo:focus,
-.customers-logo:hover {
-    border-color: var(--brand-color);
-    fill: var(--brand-color);
-} */
 
 /* Подвал */
 .footer {
@@ -561,6 +607,7 @@ a.footer-info:hover,
 a.footer-info:focus {
     text-decoration: none;
     color: var(--brand-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .style-footer {
@@ -618,6 +665,7 @@ a.footer-info:focus {
 
     color: var(--main-white);
     background-color: var(--brand-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -652,6 +700,8 @@ a.footer-info:focus {
     background: var(--brand-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-button-text {
@@ -674,6 +724,7 @@ a.footer-info:focus {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-white);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects {
@@ -699,6 +750,7 @@ a.footer-info:focus {
     background: var(--main-white);
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-name {
     text-align: start;

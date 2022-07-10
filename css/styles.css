@@ -286,6 +286,7 @@ a.head-info {
         transform: rotate(360deg);
     }
 }
+
 .is-hidden {
     visibility: hidden;
     opacity: 0;
